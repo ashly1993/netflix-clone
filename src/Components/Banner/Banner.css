@@ -1,0 +1,55 @@
+.Banner-Section{
+    /* background-image: url("../../images/wp11380286-manifest-netflix-wallpapers.jpg"); */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.Content-Section{
+    padding-top: 100px;
+    padding-left: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie-title{
+    font-size:60px;
+}
+
+.button_section{
+    display: flex;
+    flex-direction: row;
+}    
+.button{
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    background-color: rgba(51,51,51,.5);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.banner_desc{
+    padding-right: 10px;
+    line-height: 1.7;
+    margin-top: 1rem;
+    font-size: 18px;
+    height: 100px;
+    overflow-y: scroll;
+    max-width: 38rem;
+    min-width: 20rem;
+}
+.banner_desc::-webkit-scrollbar{
+    display: none;
+}
+.fade_bottom{
+    height: 360px;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
