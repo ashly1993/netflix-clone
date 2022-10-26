@@ -21,6 +21,24 @@
     padding-left: 10px;
     
 }
+.leftNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size:large;
+}
+
+
 
 .right__nav {
     display: flex;
@@ -87,4 +105,21 @@ nav.browse_nav ul a{
     align-items: center;
     color: white;
 }
+
+.selectt{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size:large;
+}
+.selectt ::after{
+    background-color: transparent; 
+    color: black;
+}
+option{
+    background-color: transparent;
+}
+
+
+
 

@@ -9,11 +9,11 @@ function Banner() {
     const [movie, setMovie] = useState()
 
     useEffect(() => {
-       axios.get(`trending/all/week?api_key=${API_KEY}`).then((response)=>{
-        console.log(response.data.results[0]);
-        setMovie(response.data.results[0])
-        // const movie_num = Math.floor(Math.random() * response.data.results.length);
-        //     setMovie(response.data.results[movie_num]);
+       axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then((response)=>{
+        console.log("trending:",response.data.results);
+        console.log("length:",response.data.results.length);
+        const randomMovie_no =  Math.floor(Math.random()*response.data.results.length)
+        setMovie(response.data.results[randomMovie_no]);
     })
     }, [])
     return (
