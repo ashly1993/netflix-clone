@@ -10,7 +10,6 @@ function Banner() {
 
     useEffect(() => {
        axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then((response)=>{
-        console.log(response.data.results[0]);
         console.log("trending:",response.data.results);
         console.log("length:",response.data.results.length);
         const randomMovie_no =  Math.floor(Math.random()*response.data.results.length)

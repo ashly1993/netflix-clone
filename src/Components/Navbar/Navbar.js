@@ -2,14 +2,36 @@ import React from 'react';
 import "./Navbar.css";
 import Logo from '../../images/Netflix-Brand-Logo.png'
 import Avatar from '../../images/Netflix-avatar.png'
+// import ReactDropdown from 'react-dropdown';
+
 
 
 function Navbar() {
+
+    // const options = [
+    //     'one', 'two', 'three'
+    //   ];
+    //   const defaultOption = options[0];
+
     return (
         <div className="nav-section">
-            <div className="logo">
+
+            <div className="leftNav">
+              <div className="logo">
                 <img src={Logo} alt="" />
+              </div>
+              <div className="links">
+                <a href="">TV Shows</a>
+                <a href="">Movies</a>
+                <a href="">Catagories</a>
+                {/* <select id="mySelect" className='selectt'>
+                 <option value>Catagory</option>
+                 <option value="foo">Action</option>
+                 <option value="buz">Comedy</option>
+               </select>                            */}
+              </div>
             </div>
+           
 
             <div className="right">
                 <div className="right__nav">
@@ -32,3 +54,6 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
