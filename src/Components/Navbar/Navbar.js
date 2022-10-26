@@ -23,16 +23,15 @@ function Navbar() {
               <div className="links">
                 <a href="">TV Shows</a>
                 <a href="">Movies</a>
-                <a href="">Catagories</a>
-                {/* <select id="mySelect" className='selectt'>
-                 <option value>Catagory</option>
-                 <option value="foo">Action</option>
-                 <option value="buz">Comedy</option>
-               </select>                            */}
-              </div>
+                {/* <a href="">Catagories</a> */}
+                <a className='Catagory' href="">Catagories<i class="fa fa-caret-down"></i></a> 
+                 <div class="dropdown-content">
+                  <a href="#">Action</a>
+                  <a href="#">Comedy</a>
+                  <a href="#">Romance</a>
+                 </div>                         
+               </div>
             </div>
-           
-
             <div className="right">
                 <div className="right__nav">
                     <nav>

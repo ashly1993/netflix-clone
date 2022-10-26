@@ -106,20 +106,24 @@ nav.browse_nav ul a{
     color: white;
 }
 
-.selectt{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size:large;
-}
-.selectt ::after{
-    background-color: transparent; 
-    color: black;
-}
-option{
-    background-color: transparent;
-}
 
-
-
-
+  .links{
+    position: relative;
+  }
+  .dropdown-content{
+    position: absolute;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    right: -107px;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    display: none; 
+  }
+  .Catagory:hover ~ .dropdown-content{
+   display: block;
+   display: flex;
+   flex-direction: column;
+  
+  }
