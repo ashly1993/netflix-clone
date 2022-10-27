@@ -42,7 +42,16 @@ function Navbar() {
                 <div className="right__nav">
                     <nav>
                         <ul>
-                            <li className="hide__left_navlinks" ><a href=""><i class="fas fa-search"></i></a></li>
+                            <li className="hide__left_navlinks" >
+                            <a href="">
+                            <div class="search-container">  
+                            <form action="#"> 
+                            <input type="text" placeholder="Search.." name="search"/>
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                            </div>
+                            </a>
+                            </li>
                             <li className="hide__left_navlinks" ><a href="">CHILDREN</a></li>
                             <li><a href=""><i class="fas fa-gift"></i></a></li>
                             <li><a href=""><i class="fas fa-bell"></i></a></li>
