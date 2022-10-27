@@ -2,7 +2,9 @@ import React from 'react';
 import "./Navbar.css";
 import Logo from '../../images/Netflix-Brand-Logo.png'
 import Avatar from '../../images/Netflix-avatar.png'
-// import ReactDropdown from 'react-dropdown';
+import SearchBar from '../SearchBar/SearchBar';
+
+
 
 
 
@@ -40,18 +42,9 @@ function Navbar() {
             </div>
             <div className="right">
                 <div className="right__nav">
-                    <nav>
+                <SearchBar/>
+                    <nav>                  
                         <ul>
-                            <li className="hide__left_navlinks" >
-                            <a href="">
-                            <div class="search-container">  
-                            <form action="#"> 
-                            <input type="text" placeholder="Search.." name="search"/>
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                            </div>
-                            </a>
-                            </li>
                             <li className="hide__left_navlinks" ><a href="">CHILDREN</a></li>
                             <li><a href=""><i class="fas fa-gift"></i></a></li>
                             <li><a href=""><i class="fas fa-bell"></i></a></li>

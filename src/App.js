@@ -7,6 +7,7 @@ import Rowpost from './Components/Rowpost/Rowpost';
 import {Orginals,Action,ComedyMovies,HorrorMovies,RomanceMovies} from './urls'
 
 
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
     <Rowpost id='comedy' url={ComedyMovies} title="ComedyMovies" isSmall/>
     <Rowpost id='horror' url={HorrorMovies} title="HorrorMovies" isSmall/>
     <Rowpost id='romance'url={RomanceMovies} title="RomanceMovies" isSmall/>
+   
   
     </div>
   );
