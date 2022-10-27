@@ -42,7 +42,7 @@ function Rowpost(props) {
         }
 
     return (
-        <div className="Row">
+        <div className="Row" id={props.id}>
 
             <div className="rowTitle">
             <h2>{props.title}</h2>

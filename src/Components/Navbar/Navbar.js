@@ -21,15 +21,21 @@ function Navbar() {
                 <img src={Logo} alt="" />
               </div>
               <div className="links">
+                <div className="tvShows">
                 <a href="">TV Shows</a>
+                </div>
+                <div className="mmovies">
                 <a href="">Movies</a>
-                {/* <a href="">Catagories</a> */}
-                <a className='Catagory' href="">Catagories<i class="fa fa-caret-down"></i></a> 
-                 <div class="dropdown-content">
-                  <a href="#">Action</a>
-                  <a href="#">Comedy</a>
-                  <a href="#">Romance</a>
-                 </div>                         
+                </div>                  
+                <div class="dropdown">
+                    <a href="" className='dropdownAtag'>Catagory<button class="dropbtn"><i class="fa fa-caret-down"></i></button></a>  
+                       <div class="dropdown-content">
+                        <a href="#action">Action</a>
+                        <a href="#comedy">Comedy</a>
+                        <a href="#romance">Romance</a>
+                       </div>
+                </div> 
+                                        
                </div>
             </div>
             <div className="right">
