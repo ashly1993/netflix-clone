@@ -2,7 +2,7 @@ import React from 'react';
 import "./Navbar.css";
 import Logo from '../../images/Netflix-Brand-Logo.png'
 import Avatar from '../../images/Netflix-avatar.png'
-import SearchBar from '../SearchBar/SearchBar';
+// import SearchBar from '../SearchBar/SearchBar';
 
 
 
