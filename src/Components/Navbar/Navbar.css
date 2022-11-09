@@ -121,5 +121,13 @@ option{
 }
 
 
+@media screen and (max-width: 767px) {
+    .links a{
+        font-size: 13px;
+    }
+    nav.browse_nav ul a{
+        font-size: 13px;
+    }
+  }
 
 
