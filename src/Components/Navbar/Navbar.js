@@ -2,7 +2,9 @@ import React from 'react';
 import "./Navbar.css";
 import Logo from '../../images/Netflix-Brand-Logo.png'
 import Avatar from '../../images/Netflix-avatar.png'
-// import ReactDropdown from 'react-dropdown';
+import SearchBar from '../SearchBar/SearchBar';
+
+
 
 
 
@@ -21,23 +23,28 @@ function Navbar() {
                 <img src={Logo} alt="" />
               </div>
               <div className="links">
+                <div className="tvShows">
                 <a href="">TV Shows</a>
+                </div>
+                <div className="mmovies">
                 <a href="">Movies</a>
-                <a href="">Catagories</a>
-                {/* <select id="mySelect" className='selectt'>
-                 <option value>Catagory</option>
-                 <option value="foo">Action</option>
-                 <option value="buz">Comedy</option>
-               </select>                            */}
-              </div>
+                </div>                  
+                <div class="dropdown">
+                    <a href="" className='dropdownAtag'>Catagory<button class="dropbtn"><i class="fa fa-caret-down"></i></button></a>  
+                       <div class="dropdown-content">
+                        <a href="#action">Action</a>
+                        <a href="#comedy">Comedy</a>
+                        <a href="#romance">Romance</a>
+                       </div>
+                </div> 
+                                        
+               </div>
             </div>
-           
-
             <div className="right">
                 <div className="right__nav">
-                    <nav>
+                <SearchBar/>
+                    <nav>                  
                         <ul>
-                            <li className="hide__left_navlinks" ><a href=""><i class="fas fa-search"></i></a></li>
                             <li className="hide__left_navlinks" ><a href="">CHILDREN</a></li>
                             <li><a href=""><i class="fas fa-gift"></i></a></li>
                             <li><a href=""><i class="fas fa-bell"></i></a></li>
