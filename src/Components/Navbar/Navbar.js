@@ -42,7 +42,7 @@ function Navbar() {
             </div>
             <div className="right">
                 <div className="right__nav">
-                {/* <SearchBar/> */}
+                <SearchBar/>
                     <nav>                  
                         <ul>
                             <li className="hide__left_navlinks" ><a href="">CHILDREN</a></li>

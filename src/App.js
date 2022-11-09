@@ -20,10 +20,10 @@ function App() {
     <Rowpost id='horror' url={HorrorMovies} title="HorrorMovies" isSmall/>
     <Rowpost id='romance'url={RomanceMovies} title="RomanceMovies" isSmall/>
 
-
-    {/* <SamplePost url={Orginals} />
-    <SamplePost  url={Action}  isSmall/> */}
-   
+{/* 
+     <SamplePost url={Orginals} />
+    <SamplePost  url={Action}  isSmall/> 
+    */}
   
     </div>
   );
