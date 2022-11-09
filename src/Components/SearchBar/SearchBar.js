@@ -24,15 +24,19 @@ const searchInput = (e)=>{
   console.log("searchVal:",searchVal);
   axios.get(`search/multi?api_key=${API_KEY}&query=${searchVal}`).then((response)=>{
     console.log("Result:",response.data.results);
+  
+   
     if(response.data.results){
       alert("Movie availble")  
     }
     else
     console.log("Not Found");
   })
-  .catch((err) => {
-    console.log("Not Found",err);
-  });
+
+ 
+  // .catch((err) => {
+  //   console.log("Not Found",err);
+  // });
 }
 
 
